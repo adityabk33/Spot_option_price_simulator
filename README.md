@@ -7,7 +7,7 @@ It includes:
 - Construction of **arbitrage-free synthetic call price surfaces** from real spot data (Amazon, Apple).
 - Market simulation using **normalizing flows** and autoencoders, as in the paper.
 - Creation of both **single-asset and multi-asset spot price simulators**.
-- **Deep Hedging** via reinforcement learning, applied to the payoff of a basket option on these assets.
+- **Deep Hedging** via reinforcement learning, applied to the payoff of a basket option on these assets with transaction cost.
 - All code is in Jupyter Notebooks; data includes `.ipynb` notebooks and Excel files.
 
 ---
@@ -40,10 +40,10 @@ It includes:
 
 ### 4. Deep Hedging RL (**Custom Implementation**)
 
-- **Purpose:** Apply reinforcement learning to **hedge the payoff** of a basket option on the simulated multi-asset market.
+- **Purpose:** Apply reinforcement learning to **hedge the payoff** of a basket option on the simulated multi-asset market with transaction cost.
 - **Process:**  
   - **Implemented a custom deep RL neural network** for hedging, inspired by the deep hedging framework but built from scratch for this project.
-  - Uses generated price paths from the simulators as the environment for training.
+  - Uses generated price paths from the simulators as the environment for training with transaction costs.
   - The RL agent learns trading strategies to minimize risk and optimize hedging performance.
 
 
