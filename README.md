@@ -38,11 +38,12 @@ It includes:
   - Model the joint latent space with a Gaussian copula, following the multi-asset method in the paper.
   - Allows for the simulation of **basket options** and multi-asset hedging scenarios.
 
-### 4. Deep Hedging RL
+### 4. Deep Hedging RL (**Custom Implementation**)
 
 - **Purpose:** Apply reinforcement learning to **hedge the payoff** of a basket option on the simulated multi-asset market.
 - **Process:**  
-  - Use generated price paths from the simulators as the environment for a deep RL hedger.
+  - **Implemented a custom deep RL neural network** for hedging, inspired by the deep hedging framework but built from scratch for this project.
+  - Uses generated price paths from the simulators as the environment for training.
   - The RL agent learns trading strategies to minimize risk and optimize hedging performance.
 
 
